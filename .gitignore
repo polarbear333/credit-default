@@ -6,6 +6,9 @@ credit/
 
 # Python cache
 __pycache__/
+.mypy_cache
+.pytest_cache
+.ruff_cache
 *.pyc
 *.pyo
 *.pyd
@@ -23,8 +26,7 @@ dist/
 .env
 *.db
 *.sqlite3
-/data/raw/
-/data/processed/
+
 
 # DVC cache
 .dvc/cache
@@ -32,3 +34,4 @@ dist/
 # Other
 .DS_Store
 mlops_project_plan.md
+repomix-output.xml

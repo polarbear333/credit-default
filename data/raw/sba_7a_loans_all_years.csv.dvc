@@ -1,0 +1,5 @@
+outs:
+- md5: b634f8187a813517890cbf1e4e24fbc7
+  size: 797217426
+  hash: md5
+  path: sba_7a_loans_all_years.csv

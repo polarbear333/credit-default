@@ -1,22 +1,27 @@
 -r base.txt
 
-pytest>=7.4.3
-pytest-asyncio>=0.21.1
-pytest-cov>=4.1.0
-pytest-mock>=3.12.0
-pytest-xdist>=3.5.0           # Parallel testing
-faker>=20.1.0                  # Fake data generation
-factory-boy>=3.3.0            # Test factories
-freezegun>=1.2.2              # Time mocking
-mypy>=1.7.1
-ruff>=0.1.7                    # Fast linter (replaces flake8, isort, black)
-pre-commit>=3.6.0
-ipython>=8.17.2
-jupyter>=1.0.0
-notebook>=7.0.6
-pgcli>=3.5.0                  # PostgreSQL CLI
-dvc==3.61.0
-
-# Profiling & Debugging
-py-spy>=0.3.14                # Python profiler
+pytest>=8.4.1
+pytest-asyncio>=1.1.0
+pytest-cov>=6.2.1
+pytest-mock>=3.14.1
+pytest-xdist>=3.8.0           # Parallel testing
+faker>=37.4.2                  # Fake data generation
+factory-boy>=3.3.3            # Test factories
+freezegun>=1.5.3              # Time mocking
+mypy>=1.17.0
+ruff>=0.12.4                    # Fast linter (replaces flake8, isort, black)
+pre-commit>=4.2.0
+ipython>=9.4.0
+jupyter>=1.1.1
+notebook>=7.4.4
+pgcli>=4.3.0                  # PostgreSQL CLI
+py-spy>=0.4.0                # Python profiler
 memory-profiler>=0.61.0
+debugpy==1.8.15             # Debugging
+jupyterlab==4.4.5           # If you use JupyterLab
+fastapi-cli==0.0.8
+fastapi-cloud-cli==0.1.4
+zenml==0.84.0               # If you added MLOps tooling
+rich>=14.0.0                 # For rich console output
+tenacity==9.1.2
+pandera==0.25.0 # smoke tests

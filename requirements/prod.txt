@@ -1,6 +1,7 @@
 -r base.txt
 
-gunicorn>=21.2.0              # WSGI server
-uvicorn[standard]>=0.24.0     # ASGI server
-sentry-sdk[fastapi]>=1.38.0   # Error tracking
+gunicorn>=23.0.0              # WSGI server
+# uvicorn[standard] is covered by base.txt now
+sentry-sdk[fastapi]>=2.33.1   # Error tracking
 newrelic>=9.2.0               # APM (optional)
+waitress==3.0.2
