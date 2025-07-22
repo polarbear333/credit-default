@@ -1,0 +1,22 @@
+-r base.txt
+
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+pytest-xdist>=3.5.0           # Parallel testing
+faker>=20.1.0                  # Fake data generation
+factory-boy>=3.3.0            # Test factories
+freezegun>=1.2.2              # Time mocking
+mypy>=1.7.1
+ruff>=0.1.7                    # Fast linter (replaces flake8, isort, black)
+pre-commit>=3.6.0
+ipython>=8.17.2
+jupyter>=1.0.0
+notebook>=7.0.6
+pgcli>=3.5.0                  # PostgreSQL CLI
+dvc==3.61.0
+
+# Profiling & Debugging
+py-spy>=0.3.14                # Python profiler
+memory-profiler>=0.61.0
