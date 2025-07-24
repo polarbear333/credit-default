@@ -15,7 +15,7 @@ LoanDataSmokeSchema = pa.DataFrameSchema(
         "BorrCity": Column(pa.String, nullable=True, coerce=True),
         "BorrState": Column(pa.String, nullable=True, coerce=True),
         "BorrZip": Column(pa.Int, nullable=True, coerce=True),
-        "LocationID": Column(pa.Float, nullable=True, coerce=True),
+        "LocationID": Column(pa.String, nullable=True, coerce=True),
         "CDC_Name": Column(pa.String, nullable=True, coerce=True),
         "CDC_Street": Column(pa.String, nullable=True, coerce=True),
         "CDC_City": Column(pa.String, nullable=True, coerce=True),

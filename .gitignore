@@ -27,6 +27,11 @@ dist/
 *.db
 *.sqlite3
 
+# airflow logs
+airflow-docker/logs
+
+#zen config
+.zen/config.yaml
 
 # DVC cache
 .dvc/cache

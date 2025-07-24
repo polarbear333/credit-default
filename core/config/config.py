@@ -1,5 +1,5 @@
 from pathlib import Path
-from pydantic import Field
+from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -21,11 +21,12 @@ class Settings(BaseSettings):
 
     # loads from .env file
     POSTGRES_USER: str = Field(..., description="PostgreSQL username")
-    POSTGRES_PASSWORD: str = Field(..., description="PostgreSQL password")
+    POSTGRES_PASSWORD: SecretStr = Field(..., description="PostgreSQL password")
+    POSTGRES_HOST: str = Field(default="localhost", description="PostgreSQL host")
     POSTGRES_DB: str = Field(..., description="PostgreSQL database name")
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_file_encoding="utf-8", case_sensitive=False
+        env_file=".env", env_file_encoding="utf-8", case_sensitive=False, extra="ignore"
     )
 
 
